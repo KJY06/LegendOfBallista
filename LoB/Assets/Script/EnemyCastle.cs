@@ -3,21 +3,23 @@ using UnityEngine.UI;
 
 public class EnemyCastle : MonoBehaviour
 {
-    public bool IsExist;
-    [SerializeField] private int hp;
+    public int hp;
     [SerializeField] private Text Hptext;
     [SerializeField] private Sprite[] sprite = new Sprite[4];
     private SpriteRenderer spriteRenderer;
     private Generate gen;
     private CameraShake shake;
+    [SerializeField] private GameObject Flag;
+    private EndGame gameend;
+
 
     void Start()
     {
-        IsExist = true;
-        Hptext.text = $"Hp       : {hp}";
+        Hptext.text = $"Hp     :     {hp}";
         spriteRenderer = GetComponent<SpriteRenderer>();
         gen = FindObjectOfType<Generate>();
         shake = FindObjectOfType<CameraShake>();
+        gameend = FindObjectOfType<EndGame>();
     }
 
     void ChangeSprite()
@@ -39,30 +41,31 @@ public class EnemyCastle : MonoBehaviour
             spriteRenderer.sprite = sprite[3];
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Friendly"))
         {
             hp -= 1;
             shake.shakeCnt = 0;
-            Hptext.text = $"Hp       : {hp}";
+            Hptext.text = $"Hp     :     {hp}";
         }
         if (collision.CompareTag("Elite"))
         {
             hp -= 2;
             shake.shakeCnt = 0;
-            Hptext.text = $"Hp       : {hp}";
+            Hptext.text = $"Hp     :     {hp}";
         }
         if (collision.CompareTag("BossFriendly"))
         {
             hp -= 5;
             shake.shakeCnt = 0;
-            Hptext.text = $"Hp       : {hp}";
+            Hptext.text = $"Hp     :     {hp}";
         }
         if (hp <= 0)
         {
             gen.IsCastleExist = false;
+            Flag.gameObject.SetActive(true);
+            gameend.IsWin = true;
             Destroy(gameObject);
         }
         ChangeSprite();

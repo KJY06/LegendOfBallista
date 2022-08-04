@@ -2,14 +2,7 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
-    public float arrowSpeed;
-    private float time;
-    private Castle castle;
-
-    private void Start()
-    {
-        castle = FindObjectOfType<Castle>();
-    }
+    [SerializeField] private float arrowSpeed;
     void Update()
     {
         transform.Translate(Vector3.up * arrowSpeed * Time.deltaTime);

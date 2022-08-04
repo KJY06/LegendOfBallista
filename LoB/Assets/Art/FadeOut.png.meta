@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8a417ecc3988a7040823994b0e9784a4
+guid: f8316032c198c7e47addf6939a1a4f96
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Item_0
+      name: FadeOut_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 345
-        width: 160
-        height: 160
+        x: 719
+        y: 669
+        width: 707
+        height: 332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9d4b44faec2a224b8ca980b08a72b08
-      internalID: -153215177
+      spriteID: ccd9773f8433e154eb35aff6ff6c79ca
+      internalID: 597819533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_1
+      name: FadeOut_1
       rect:
         serializedVersion: 2
-        x: 175
-        y: 345
-        width: 160
-        height: 160
+        x: 1434
+        y: 674
+        width: 707
+        height: 327
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cca5f18899708204ea9c168b1db13841
-      internalID: 1975529522
+      spriteID: dc3e21afc5bdcf449be856bc63b8c66a
+      internalID: 1163454046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_2
+      name: FadeOut_2
       rect:
         serializedVersion: 2
-        x: 365
-        y: 350
-        width: 115
-        height: 150
+        x: 2149
+        y: 674
+        width: 707
+        height: 327
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89cf40843d4d0ee49a8eb85b7c9bf71a
-      internalID: -255469239
+      spriteID: a7eeca3d1f4cf3b4fa9707700155121e
+      internalID: 176030520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_3
+      name: FadeOut_3
       rect:
         serializedVersion: 2
-        x: 535
-        y: 350
-        width: 115
-        height: 150
+        x: 4
+        y: 339
+        width: 707
+        height: 327
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb5711ef8c08e3a48950d79657ebfd8a
-      internalID: -395572343
+      spriteID: 124ef2d87e9eaeb4cad3f44e37a97cc9
+      internalID: -2072649371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_4
+      name: FadeOut_4
       rect:
         serializedVersion: 2
-        x: 25
-        y: 180
-        width: 115
-        height: 150
+        x: 719
+        y: 339
+        width: 707
+        height: 327
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea3707fe96ee8524ca9b735e2b0d7dc9
-      internalID: -913949407
+      spriteID: 814c87af691846844bd71457856e0def
+      internalID: 606210466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_5
+      name: FadeOut_5
       rect:
         serializedVersion: 2
-        x: 195
-        y: 180
-        width: 115
-        height: 150
+        x: 1434
+        y: 339
+        width: 707
+        height: 327
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 248e73d4e5165ba46bd0f0f95f296776
-      internalID: -1323372689
+      spriteID: 963f2e30b2a55634da20db95dc1b4cd6
+      internalID: -11882622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_6
+      name: FadeOut_6
       rect:
         serializedVersion: 2
-        x: 365
-        y: 180
-        width: 115
-        height: 150
+        x: 2149
+        y: 339
+        width: 707
+        height: 327
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d33160038ac89f54fb2ec7ef39b7a1a3
-      internalID: -1712976951
+      spriteID: 5f4a39d6240ed3045b886d7076317a00
+      internalID: 1736767453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_7
+      name: FadeOut_7
       rect:
         serializedVersion: 2
-        x: 535
-        y: 180
-        width: 115
-        height: 150
+        x: 3
+        y: 3
+        width: 709
+        height: 329
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 617d84d1b586f3649a0762873ccd64ed
-      internalID: -1276638133
+      spriteID: 12febc225540a3f4aa99a16d87925ee9
+      internalID: 377046130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_8
+      name: FadeOut_8
       rect:
         serializedVersion: 2
-        x: 25
-        y: 35
-        width: 50
-        height: 105
+        x: 718
+        y: 3
+        width: 709
+        height: 329
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3855a8d7815f5845a4b0d593ffed27a
-      internalID: 555020699
+      spriteID: 51566763484a18d4782f600ff90b19d9
+      internalID: -1850111615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_9
+      name: FadeOut_9
       rect:
         serializedVersion: 2
-        x: 175
-        y: 60
-        width: 160
-        height: 40
+        x: 1433
+        y: 3
+        width: 709
+        height: 329
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,20 +307,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f567f8ba94f26344b00e52183344a6b
-      internalID: -69544665
+      spriteID: 7c00f38d306a467419aa024abe61d724
+      internalID: -918576002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_10
+      name: FadeOut_10
       rect:
         serializedVersion: 2
-        x: 345
-        y: 5
-        width: 160
-        height: 160
+        x: 2148
+        y: 3
+        width: 709
+        height: 329
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,29 +328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ca6f84eb93343440906593be89820af
-      internalID: -1452417928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Item_11
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 35
-        width: 55
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5888f692d206f954d8e6577ae734d1b6
-      internalID: 497854403
+      spriteID: 55eaa0f912a158b47b10699e015e21d2
+      internalID: 404391499
       vertices: []
       indices: 
       edges: []
@@ -366,18 +345,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Item_2: -255469239
-      Item_10: -1452417928
-      Item_0: -153215177
-      Item_11: 497854403
-      Item_6: -1712976951
-      Item_4: -913949407
-      Item_7: -1276638133
-      Item_8: 555020699
-      Item_9: -69544665
-      Item_3: -395572343
-      Item_5: -1323372689
-      Item_1: 1975529522
+      FadeOut_4: 606210466
+      FadeOut_5: -11882622
+      FadeOut_7: 377046130
+      FadeOut_0: 597819533
+      FadeOut_6: 1736767453
+      FadeOut_10: 404391499
+      FadeOut_2: 176030520
+      FadeOut_1: 1163454046
+      FadeOut_3: -2072649371
+      FadeOut_8: -1850111615
+      FadeOut_9: -918576002
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

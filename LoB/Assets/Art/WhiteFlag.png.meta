@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8a417ecc3988a7040823994b0e9784a4
+guid: a7f0faf929bb6574f87d93193a84d114
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Item_0
+      name: WhiteFlag_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 345
-        width: 160
-        height: 160
+        x: 0
+        y: 175
+        width: 175
+        height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9d4b44faec2a224b8ca980b08a72b08
-      internalID: -153215177
+      spriteID: 450e282b36ca4ae468080dd8007d250b
+      internalID: 1567704409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_1
+      name: WhiteFlag_1
       rect:
         serializedVersion: 2
         x: 175
-        y: 345
-        width: 160
-        height: 160
+        y: 175
+        width: 175
+        height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cca5f18899708204ea9c168b1db13841
-      internalID: 1975529522
+      spriteID: 8325031f14d16404096144a19eb9b890
+      internalID: 1503420856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_2
+      name: WhiteFlag_2
       rect:
         serializedVersion: 2
-        x: 365
-        y: 350
-        width: 115
-        height: 150
+        x: 350
+        y: 175
+        width: 175
+        height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89cf40843d4d0ee49a8eb85b7c9bf71a
-      internalID: -255469239
+      spriteID: 2bb7f65a5f024784aa22bd050f3fc4d6
+      internalID: -1064869003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_3
+      name: WhiteFlag_3
       rect:
         serializedVersion: 2
-        x: 535
-        y: 350
-        width: 115
-        height: 150
+        x: 0
+        y: 0
+        width: 175
+        height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,125 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb5711ef8c08e3a48950d79657ebfd8a
-      internalID: -395572343
+      spriteID: 1cfce6086134c7545bcdb79d0f490454
+      internalID: 2080464210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_4
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 180
-        width: 115
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea3707fe96ee8524ca9b735e2b0d7dc9
-      internalID: -913949407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Item_5
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 180
-        width: 115
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 248e73d4e5165ba46bd0f0f95f296776
-      internalID: -1323372689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Item_6
-      rect:
-        serializedVersion: 2
-        x: 365
-        y: 180
-        width: 115
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d33160038ac89f54fb2ec7ef39b7a1a3
-      internalID: -1712976951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Item_7
-      rect:
-        serializedVersion: 2
-        x: 535
-        y: 180
-        width: 115
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 617d84d1b586f3649a0762873ccd64ed
-      internalID: -1276638133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Item_8
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 35
-        width: 50
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3855a8d7815f5845a4b0d593ffed27a
-      internalID: 555020699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Item_9
+      name: WhiteFlag_4
       rect:
         serializedVersion: 2
         x: 175
-        y: 60
-        width: 160
-        height: 40
+        y: 0
+        width: 175
+        height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f567f8ba94f26344b00e52183344a6b
-      internalID: -69544665
+      spriteID: e13b44e863d84cf4698621fa23f1dccb
+      internalID: 1373581596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item_10
+      name: WhiteFlag_5
       rect:
         serializedVersion: 2
-        x: 345
-        y: 5
-        width: 160
-        height: 160
+        x: 350
+        y: 0
+        width: 175
+        height: 175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,29 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ca6f84eb93343440906593be89820af
-      internalID: -1452417928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Item_11
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 35
-        width: 55
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5888f692d206f954d8e6577ae734d1b6
-      internalID: 497854403
+      spriteID: 116d9b1e6835cfb4fb63b4982690532a
+      internalID: 47537346
       vertices: []
       indices: 
       edges: []
@@ -366,18 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Item_2: -255469239
-      Item_10: -1452417928
-      Item_0: -153215177
-      Item_11: 497854403
-      Item_6: -1712976951
-      Item_4: -913949407
-      Item_7: -1276638133
-      Item_8: 555020699
-      Item_9: -69544665
-      Item_3: -395572343
-      Item_5: -1323372689
-      Item_1: 1975529522
+      WhiteFlag_2: -1064869003
+      WhiteFlag_5: 47537346
+      WhiteFlag_0: 1567704409
+      WhiteFlag_1: 1503420856
+      WhiteFlag_4: 1373581596
+      WhiteFlag_3: 2080464210
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

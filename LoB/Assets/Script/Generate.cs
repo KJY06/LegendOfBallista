@@ -12,8 +12,10 @@ public class Generate : MonoBehaviour
 
     private float Mcurrenttime;
     [SerializeField] private float Mmaxtime;
+    
     private float Ecurrenttime;
     [SerializeField] private float Emaxtime;
+    
     public bool forspon = false;
     public int bosscnt = 0;
 
@@ -49,7 +51,7 @@ public class Generate : MonoBehaviour
             {
                 Ecurrenttime = 0;
                 target = GameObject.Find("Ballista").transform;
-                var vector2 = new Vector2(-12f, target.position.y + Random.Range(-4.1f, 1.7f));
+                var vector2 = new Vector2(-12f, target.position.y + Random.Range(-3.9f, 1.7f));
                 Instantiate(Elite, vector2, quaternion.identity);
             }
 

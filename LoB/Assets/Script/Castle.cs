@@ -1,21 +1,23 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class Castle : MonoBehaviour
 {
    [SerializeField] private int hp;
    [SerializeField] private Text Hp;
    [SerializeField] private Sprite[] sprite = new Sprite[4];
+   [SerializeField] private GameObject Flag;
     private SpriteRenderer spriteRenderer;
     private CameraShake shake;
+    private EndGame gameend;
 
 
     void Start()
     {
-        Hp.text = $"Hp       : {hp}";
+        Hp.text = $"Hp     :     {hp}";
         spriteRenderer = GetComponent<SpriteRenderer>();
         shake = FindObjectOfType<CameraShake>();
+        gameend = FindObjectOfType<EndGame>();
     }
     void ChangeSprite()
     {
@@ -42,24 +44,26 @@ public class Castle : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             hp -= 1;
-            Hp.text = $"Hp       : {hp}";
+            Hp.text = $"Hp     :     {hp}";
             shake.shakeCnt = 0;
         }
         if (collision.CompareTag("EliteEnemy"))
         {
             hp -= 2;
-            Hp.text = $"Hp       : {hp}";
+            Hp.text = $"Hp     :     {hp}";
             shake.shakeCnt = 0;
         }
         if (collision.CompareTag("Boss"))
         {
             hp -= 5;
-            Hp.text = $"Hp       : {hp}";
+            Hp.text = $"Hp     :     {hp}";
             shake.shakeCnt = 0;
         }
         if (hp <= 0)
         {
-            SceneManager.LoadScene("End");
+            Flag.gameObject.SetActive(true);
+            gameend.IsWin = false;
+            Destroy(gameObject);
         }
         ChangeSprite();
     }

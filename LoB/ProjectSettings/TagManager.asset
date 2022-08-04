@@ -11,6 +11,7 @@ TagManager:
   - Elite
   - BossFriendly
   - EliteEnemy
+  - FireArrow
   layers:
   - Default
   - TransparentFX

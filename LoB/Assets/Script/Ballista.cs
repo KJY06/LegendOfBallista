@@ -4,11 +4,16 @@ public class Ballista : MonoBehaviour
 {
     private float angle;
     private Vector2 target, mouse;
-    public GameObject arrowprefab;
+    [SerializeField] private GameObject arrowprefab;
+    [SerializeField] private GameObject Firearrowprefab;
     private float time;
+    private int FireArrowcnt;
+    private SpawnIcon Fire;
     void Start()
     {
+        FireArrowcnt = 0;
         target = transform.position;
+        Fire = FindObjectOfType<SpawnIcon>();
     }
     void Update()
     {
@@ -17,14 +22,34 @@ public class Ballista : MonoBehaviour
     }
     void shoot()
     {
-        time += Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.S))
+        if(Fire.FItemGet == true)
         {
-
-            if (time >= 0.5f)
+            if(Input.GetKeyDown(KeyCode.V))
             {
-                time = 0;
-                Instantiate(arrowprefab, transform.position, transform.rotation);
+                FireArrowcnt = 10;
+                Fire.FItemGet = false;
+            }
+        }
+        time += Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if (FireArrowcnt == 0)
+            {
+                if (time >= 0.5f)
+                {
+                    time = 0;
+                    Instantiate(arrowprefab, transform.position, transform.rotation);
+                }
+            }
+
+            else
+            {
+                if (time >= 0.5f)
+                {
+                    FireArrowcnt -= 1;
+                    time = 0;
+                    Instantiate(Firearrowprefab, transform.position, transform.rotation);
+                }
             }
         }
     }

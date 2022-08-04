@@ -4,12 +4,7 @@ public class Friendly : MonoBehaviour
 {
     [SerializeField] private int hp;
     [SerializeField] private float speed;
-    private Enemy enemy;
 
-    private void Start()
-    {
-        enemy = FindObjectOfType<Enemy>();
-    }
     void Update()
     {
         Move();
