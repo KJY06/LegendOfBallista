@@ -6,6 +6,45 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Title.unity
+    guid: 610a005758f92ef41865fbdfccb9ca39
+  - enabled: 1
+    path: Assets/Scenes/ModeSelect.unity
+    guid: 3046ec5088ea0da40b401a87e6208d57
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: ee7baa2e5cfa1e54b8df4d0d9688b96e
+  - enabled: 1
+    path: Assets/Scenes/Story.unity
+    guid: 558bd6bcf29ea1141a8e5821d49b9230
+  - enabled: 1
+    path: Assets/Scenes/Battle1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Battle2.unity
+    guid: 2354126f0da583640a1cbfcfd3b63461
+  - enabled: 1
+    path: Assets/Scenes/Battle3.unity
+    guid: 7b77185c77be08442b0fa4437eeec555
+  - enabled: 1
+    path: Assets/Scenes/Battle4.unity
+    guid: 8bde4c34d2f94c44b9d034cdb3638a2e
+  - enabled: 1
+    path: Assets/Scenes/Battle5.unity
+    guid: 6c8de9bbab4c01c4ca49ef4b02d2c16e
+  - enabled: 1
+    path: Assets/Scenes/NomalWin.unity
+    guid: a0b6b8018b94f8f479ccf1300f764759
+  - enabled: 1
+    path: Assets/Scenes/NomalLose.unity
+    guid: d35c9c3016875bc4985e6888f15a861e
+  - enabled: 1
+    path: Assets/Scenes/ELRule.unity
+    guid: 8f694a06b46f8914aa56de6b5bd1951c
+  - enabled: 1
+    path: Assets/Scenes/Endless.unity
+    guid: 79a963aa55102c54eb83a66653dba4dd
+  - enabled: 1
+    path: Assets/Scenes/EndlessEnding.unity
+    guid: ccc89b05b2a7fe1419399adc0a18f777
   m_configObjects: {}

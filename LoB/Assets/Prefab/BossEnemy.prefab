@@ -148,4 +148,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   hp: 7
-  addpoint: 0
