@@ -54,7 +54,7 @@ public class TextSwiching : MonoBehaviour
         if(textnumber > 8)
         {
             FadeOut.gameObject.SetActive(true);
-            Invoke("GameStart", 5);
+            Invoke("GameStart", 2);
         }
     }
     void GameStart()

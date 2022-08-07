@@ -8,6 +8,7 @@ public class Remain : MonoBehaviour
     public bool Citemget;
     public int point;
     public bool? IsNomal;
+    public int BallistaLevel;
     private void Awake()
     {
         IsNomal = null;
@@ -16,6 +17,7 @@ public class Remain : MonoBehaviour
         point = 0;
         Fitemget = false;
         Citemget = false;
+        BallistaLevel = 0;
         DontDestroyOnLoad(this);
     }
     private void Start()
@@ -28,7 +30,7 @@ public class Remain : MonoBehaviour
         }
         else
         {
-            if(IsNomal != false)
+            if(IsNomal == true)
                 Destroy(gameObject);
         }
     }

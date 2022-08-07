@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7328572646380459130}
   - component: {fileID: 7328572646380459125}
   - component: {fileID: 7328572646380459124}
-  - component: {fileID: 8465694758076308528}
+  - component: {fileID: 2095275775088895726}
   m_Layer: 0
   m_Name: D-BossEnemy(EL)
   m_TagString: Boss
@@ -134,7 +134,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8465694758076308528
+--- !u!114 &2095275775088895726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,8 +143,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7328572646380459127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c839119d24dd2344896a5a4fcfa2b0d9, type: 3}
+  m_Script: {fileID: 11500000, guid: cfa3bed13ecf6364ea8d02727888f504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
-  hp: 7
+  hp: 5

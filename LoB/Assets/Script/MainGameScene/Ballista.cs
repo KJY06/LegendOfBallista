@@ -4,6 +4,8 @@ public class Ballista : MonoBehaviour
 {
     private float angle;
     private Vector2 target, mouse;
+    [SerializeField] private Sprite[] sprite = new Sprite[2];
+    SpriteRenderer spriterenderer;
 
     [SerializeField] private GameObject arrowprefab;
     [SerializeField] private GameObject Firearrowprefab;
@@ -11,11 +13,17 @@ public class Ballista : MonoBehaviour
     private float time;
     private int FireArrowcnt;
     private SpawnIcon Fire;
+    private Remain re;
+    private Coin c;
 
     [SerializeField] private GameObject fire;
+    [SerializeField] private GameObject Upgradeballista;
     private AudioSource au;
     void Start()
     {
+        spriterenderer = GetComponent<SpriteRenderer>();
+        c = FindObjectOfType<Coin>();
+        re = FindObjectOfType<Remain>();
         FireArrowcnt = 0;
         target = transform.position;
         Fire = FindObjectOfType<SpawnIcon>();
@@ -25,6 +33,64 @@ public class Ballista : MonoBehaviour
         UseItem();
         shoot();
         Follow();
+        Upgrade();
+    }
+
+    private void Upgrade()
+    {
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            au = Upgradeballista.GetComponent<AudioSource>();
+
+            if (re.BallistaLevel == 0)
+            {
+                if (c.coin >= 15)
+                {
+                    au.Play();
+                    c.coin -= 15;
+                    re.BallistaLevel++;
+                }
+
+            }
+            else if (re.BallistaLevel == 1)
+            {
+                if (c.coin >= 20)
+                {
+                    au.Play();
+                    c.coin -= 20;
+                    re.BallistaLevel++;
+                }
+            }
+            else if (re.BallistaLevel == 2)
+            {
+                if (c.coin >= 30)
+                {
+                    au.Play();
+                    c.coin -= 30;
+                    re.BallistaLevel++;
+                }
+            }
+            else if (re.BallistaLevel == 3)
+            {
+                if (c.coin >= 45)
+                {
+                    au.Play();
+                    c.coin -= 45;
+                    re.BallistaLevel++;
+                }
+            }
+            else if (re.BallistaLevel == 4)
+            {
+                if (c.coin >= 60)
+                {
+                    au.Play();
+                    c.coin -= 60;
+                    re.BallistaLevel++;
+                }
+            }
+        }
+        if (re.BallistaLevel == 5)
+            spriterenderer.sprite = sprite[1];
     }
     void Follow() //마우스에 따라 회전하기
     {
@@ -32,6 +98,7 @@ public class Ballista : MonoBehaviour
         angle = Mathf.Atan2(mouse.y - target.y, mouse.x - target.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
     }
+
     void UseItem() //불화살 사용
     {
         if (Fire.FItemGet == true)

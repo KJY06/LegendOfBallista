@@ -79,13 +79,13 @@ public class Castle : MonoBehaviour
         if (collision.CompareTag("Boss"))
         {
             au.Play();
-            hp -= 7;
+            hp -= 5;
             Hp.text = $"Hp     :     {hp}";
             shake.shakeCnt = 0;
         }
         if (hp <= 0)
         {
-            if (re.IsNomal == false)
+            if (re.IsNomal != true)
                 SavePoint();
             Flag.gameObject.SetActive(true);
             gameend.IsWin = false;

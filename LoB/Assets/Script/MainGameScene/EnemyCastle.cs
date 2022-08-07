@@ -92,7 +92,7 @@ public class EnemyCastle : MonoBehaviour
             if (collision.CompareTag("BossFriendly"))
             {
                 au.Play();
-                hp -= 7;
+                hp -= 5;
                 shake.shakeCnt = 0;
                 Hptext.text = $"Hp     :     {hp}";
             }

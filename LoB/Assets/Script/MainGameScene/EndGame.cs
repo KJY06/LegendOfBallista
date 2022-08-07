@@ -35,18 +35,18 @@ public class EndGame : MonoBehaviour
     {
         StageText.gameObject.SetActive(false);
         ResultText.text = "Win";
-        Invoke("FadeOut", 6);
+        Invoke("FadeOut", 2);
     }
     void GameLose()
     {
         StageText.gameObject.SetActive(false);
         ResultText.text = "Lose";
-        Invoke("FadeOut", 6);
+        Invoke("FadeOut", 2);
     }
     void FadeOut()
     {
         FadeImage.gameObject.SetActive(true);
-        Invoke("ToNextLevel", 3);
+        Invoke("ToNextLevel", 2);
     }
     void ToNextLevel()
     {

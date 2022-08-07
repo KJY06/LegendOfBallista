@@ -6,10 +6,12 @@ public class Enemy : MonoBehaviour
     private int addpoint;
     private Coin coin;
     private EnemyCastle castle;
+    private Remain re;
 
     private void Start()
     {
-        addpoint = hp;
+        re = FindObjectOfType<Remain>();
+        addpoint = hp * 2;
         coin = FindObjectOfType<Coin>();
         castle = FindObjectOfType<EnemyCastle>();
     }
@@ -27,28 +29,46 @@ public class Enemy : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("Arrow"))
+        {
+            if (re.BallistaLevel == 0)
+            {
+                hp -= 1;
+            }
+            if (re.BallistaLevel == 1 || re.BallistaLevel == 2)
+            {
+                hp -= 2;
+            }
+            if (re.BallistaLevel == 3)
+            {
+                hp -= 3;
+            }
+            if (re.BallistaLevel == 4)
+            {
+                hp -= 4;
+            }
+            if (re.BallistaLevel == 5)
+            {
+                hp -= 5;
+            }
+        }
         if (collision.CompareTag("FireArrow"))
         {
-            coin.point += 2;
-            coin.coin += 2;
+            coin.point += 3;
+            coin.coin += 3;
             hp = 0;
         }
-        if (collision.CompareTag("Friendly") || collision.CompareTag("Arrow"))
+        if (collision.CompareTag("Friendly"))
             hp -= 1;
         if (collision.CompareTag("Elite"))
             hp -= 2;
         if (collision.CompareTag("BossFriendly"))
-            hp -= 7;
+            hp -= 5;
 
         if (hp <= 0)
         {
             coin.point += addpoint;
             coin.coin += addpoint;
-            if(this.CompareTag("Boss"))
-            {
-                coin.coin += 3;
-                coin.point += 3;
-            }
             Destroy(gameObject);
         }
         if (collision.CompareTag("Player"))
