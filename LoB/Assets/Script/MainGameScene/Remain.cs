@@ -28,7 +28,8 @@ public class Remain : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            if(IsNomal != false)
+                Destroy(gameObject);
         }
     }
 }

@@ -6,8 +6,10 @@ public class StopGame : MonoBehaviour
 {
     [SerializeField] private GameObject Pannel;
     private bool IsStop;
+    private AudioSource au;
     void Start()
     {
+        au = GetComponent<AudioSource>();
         IsStop = false;
     }
 
@@ -35,6 +37,7 @@ public class StopGame : MonoBehaviour
 
     public void OnClickToContinue()
     {
+        au.Play();
         IsStop = true;
         ESC();
     }

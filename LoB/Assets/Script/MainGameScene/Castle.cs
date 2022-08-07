@@ -55,6 +55,11 @@ public class Castle : MonoBehaviour
     {
         end.point = c.point;
     }
+
+    private void destroy()
+    {
+        Destroy(gameObject);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
@@ -85,7 +90,7 @@ public class Castle : MonoBehaviour
             Flag.gameObject.SetActive(true);
             gameend.IsWin = false;
             IsExist = false;
-            Destroy(gameObject);
+            Invoke("destroy", 0.2F);
         }
         ChangeSprite();
     }

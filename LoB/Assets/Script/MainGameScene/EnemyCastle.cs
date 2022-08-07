@@ -67,6 +67,10 @@ public class EnemyCastle : MonoBehaviour
         remain.Fitemget = remainFitem.FItemGet;
         remain.Citemget = remainCitem.CItemGet;
     }
+    void destroy()
+    {
+        Destroy(gameObject);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(remain.IsNomal == true)
@@ -97,7 +101,7 @@ public class EnemyCastle : MonoBehaviour
                 SaveState();
                 Flag.gameObject.SetActive(true);
                 gameend.IsWin = true;
-                Destroy(gameObject);
+                Invoke("destroy", 0.2F);
             }
             ChangeSprite();
         }
