@@ -58,12 +58,12 @@ public class SpawnIcon : MonoBehaviour
         else
             Icon1.gameObject.SetActive(false);
 
-        if (buy.coin >= 35)
+        if (buy.coin >= 45)
             Icon2.gameObject.SetActive(true);
         else
             Icon2.gameObject.SetActive(false);
 
-        if (buy.coin >= 85)
+        if (buy.coin >= 115)
             Icon3.gameObject.SetActive(true);
         else
             Icon3.gameObject.SetActive(false);
@@ -83,7 +83,7 @@ public class SpawnIcon : MonoBehaviour
     {
         if(re.BallistaLevel == 0)
         {
-            if (buy.coin >= 15)
+            if (buy.coin >= 50)
             {
                 LevelUp.gameObject.SetActive(true);
             }
@@ -93,28 +93,28 @@ public class SpawnIcon : MonoBehaviour
         }
         if (re.BallistaLevel == 1)
         {
-            if (buy.coin >= 20)
+            if (buy.coin >= 80)
                 LevelUp.gameObject.SetActive(true);
             else
                 LevelUp.gameObject.SetActive(false);
         }
         if (re.BallistaLevel == 2)
         {
-            if (buy.coin >= 30)
+            if (buy.coin >= 110)
                 LevelUp.gameObject.SetActive(true);
             else
                 LevelUp.gameObject.SetActive(false);
         }
         if (re.BallistaLevel == 3)
         {
-            if (buy.coin >= 45)
+            if (buy.coin >= 140)
                 LevelUp.gameObject.SetActive(true);
             else
                 LevelUp.gameObject.SetActive(false);
         }
         if (re.BallistaLevel == 4)
         {
-            if (buy.coin >= 60)
+            if (buy.coin >= 170)
                 LevelUp.gameObject.SetActive(true);
             else
                 LevelUp.gameObject.SetActive(false);

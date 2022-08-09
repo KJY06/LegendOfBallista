@@ -33,9 +33,9 @@ public class SpawnFriendly : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.X))
         {
-            if (buy.coin >= 35)
+            if (buy.coin >= 45)
             {
-                buy.coin -= 35;
+                buy.coin -= 45;
                 var vector2 = new Vector2(8.7f, Random.Range(-4.1f, 1.7f));
                 au.Play();
                 Instantiate(Elite, vector2, quaternion.identity);
@@ -43,9 +43,9 @@ public class SpawnFriendly : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
-            if (buy.coin >= 85)
+            if (buy.coin >= 115)
             {
-                buy.coin -= 85;
+                buy.coin -= 115;
                 var vector2 = new Vector2(8.7f, Random.Range(-3.9f, 1.3f));
                 au.Play();
                 Instantiate(Boss, vector2, quaternion.identity);

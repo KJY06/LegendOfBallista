@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         re = FindObjectOfType<Remain>();
-        addpoint = hp * 2;
+        addpoint = hp;
         coin = FindObjectOfType<Coin>();
         castle = FindObjectOfType<EnemyCastle>();
     }
@@ -32,25 +32,17 @@ public class Enemy : MonoBehaviour
         if (collision.CompareTag("Arrow"))
         {
             if (re.BallistaLevel == 0)
-            {
                 hp -= 1;
-            }
-            if (re.BallistaLevel == 1 || re.BallistaLevel == 2)
-            {
+            if (re.BallistaLevel == 1)
                 hp -= 2;
-            }
-            if (re.BallistaLevel == 3)
-            {
+            if (re.BallistaLevel == 2)
                 hp -= 3;
-            }
-            if (re.BallistaLevel == 4)
-            {
+            if (re.BallistaLevel == 3)
                 hp -= 4;
-            }
-            if (re.BallistaLevel == 5)
-            {
+            if (re.BallistaLevel == 4)
                 hp -= 5;
-            }
+            if (re.BallistaLevel == 5)
+                hp -= 6;
         }
         if (collision.CompareTag("FireArrow"))
         {
@@ -67,8 +59,8 @@ public class Enemy : MonoBehaviour
 
         if (hp <= 0)
         {
-            coin.point += addpoint;
-            coin.coin += addpoint;
+            coin.point += addpoint + 2;
+            coin.coin += addpoint + 2;
             Destroy(gameObject);
         }
         if (collision.CompareTag("Player"))
